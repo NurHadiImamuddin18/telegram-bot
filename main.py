@@ -2,7 +2,8 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 import os
 
-TOKEN = "TOKEN"
+TOKEN = os.getenv("TOKEN")
+app = Application.builder().token(TOKEN).build()
 
 # Struktur materi
 menu = {
