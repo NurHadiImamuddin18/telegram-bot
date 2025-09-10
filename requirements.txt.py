@@ -1,3 +1,3 @@
 python-telegram-bot==20.3
-apscheduler
+APScheduler==3.10.4
 pytz
